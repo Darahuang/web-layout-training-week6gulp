@@ -1,20 +1,20 @@
-const signInModal = new bootstrap.Modal(document.querySelector('.js-signInModal'));
-const signUpModal = new bootstrap.Modal(document.querySelector('.js-signUpModal'));
+"use strict";
 
-const signInModalLink = document.querySelector('.js-signInModal-link');
-const signUpModalLink = document.querySelector('.js-signUpModal-link');
-signInModalLink.addEventListener('click', (e) => {
+var signInModal = new bootstrap.Modal(document.querySelector('.js-signInModal'));
+var signUpModal = new bootstrap.Modal(document.querySelector('.js-signUpModal'));
+var signInModalLink = document.querySelector('.js-signInModal-link');
+var signUpModalLink = document.querySelector('.js-signUpModal-link');
+signInModalLink.addEventListener('click', function (e) {
   e.preventDefault();
   signInModal.show();
   signUpModal.hide();
 });
-signUpModalLink.addEventListener('click', (e) => {
+signUpModalLink.addEventListener('click', function (e) {
   e.preventDefault();
   signInModal.hide();
   signUpModal.show();
 });
-
-const swiper = new Swiper('.mySwiper', {
+var swiper = new Swiper('.mySwiper', {
   slidesPerView: 1,
   spaceBetween: 10,
   autoplay: {
@@ -30,8 +30,7 @@ const swiper = new Swiper('.mySwiper', {
       spaceBetween: 30
     }
   }
-});
-// const swiper = new Swiper('.mySwiper', {
+}); // const swiper = new Swiper('.mySwiper', {
 //   slidesPerView: 1,
 //   spaceBetween: 10,
 //   autoplay: {
@@ -57,3 +56,4 @@ const swiper = new Swiper('.mySwiper', {
 //     }
 //   }
 // });
+//# sourceMappingURL=all.js.map

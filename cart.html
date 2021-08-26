@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%- title %></title>
+    <title>確認訂單</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -21,9 +21,105 @@
   </head>
 
   <body>
-    <%- include('./components/navbar.ejs') %>
-    <nav <% if(current !== 'completion') { %> hidden <% } %>>
-      <%- include('./components/menu.ejs') %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 border border-dark sticky-top">
+  <div class="container position-relative align-items-center">
+    <a
+      class="
+       title
+        navbar-brand
+        h4
+        order-2
+        position-absolute
+        top-50
+        start-50
+        translate-middle
+      "
+      href="index.html"
+      >EXHIBINECTION</a
+    >
+
+    <button
+      class="navbar-toggler order-1"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-end"
+      id="navbarNav"
+    >
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link px-3 link-primary-hover"
+            href="#signInModal"
+            data-bs-toggle="modal"
+            >Sign in</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link px-3 link-primary-hover"
+            href="#signUpModal"
+            data-bs-toggle="modal"
+            >Sign up</a
+          >
+        </li>
+      </ul>
+    </div>
+    <a
+      href="#"
+      class="order-3 ps-3 offcanvas-cart position-relative"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      <span class="material-icons align-middle"> confirmation_number </span>
+      <span class="position-absolute top-0 start-100 translate-middle rounded-circle cart-number bg-secondary text-white text-center align-middle fs-14">4</span>
+    </a>
+  </div>
+</nav>
+    <nav  hidden >
+        <nav class="container-fluid border-bottom border-dark">
+    <div class="mt-4 nav-scroller ">
+      <ul class="nav justify-content-md-center">
+        <li class="nav-item ">
+          <a class="nav-link link-dark link-secondary-hover me-3" aria-current="page" href="#">音樂</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-secondary-hover me-3" href="#">戲劇</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-secondary-hover me-3" href="design.html">設計</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-secondary-hover me-3" href="#">藝術</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-secondary-hover me-3" href="#">美食</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-secondary-hover me-3" href="#">旅遊</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-secondary-hover me-3" href="#">電影</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-secondary-hover me-3" href="#">親子</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-dark link-secondary-hover" href="#">期間限定</a>
+        </li>
+      </ul>
+     </div>
+  </nav>
+  
+
     </nav>
 
     <!-- signInModal -->
@@ -339,7 +435,209 @@
       </div>
     </div>
 
-    <%- contents %>
+    
+<section class="container pt-5 pb-8">
+  <div class="row">
+    <div class="col-md-8">
+      <ul
+        class="
+          timeline
+          list-unstyled
+          d-flex
+          justify-content-around
+          mb-4 mb-md-6
+        "
+      >
+        <li class="timeline-bar timeline-done mb-2">
+          <p class="font-medium fs-sm-14">確認訂單</p>
+        </li>
+        <li class="timeline-bar mb-2">
+          <p class="fw-light fs-sm-14">填寫訂購資訊</p>
+        </li>
+        <li class="timeline-bar mb-2">
+          <p class="fw-light fs-sm-14">填寫付款資訊</p>
+        </li>
+        <li class="timeline-bar mb-2">
+          <p class="fw-light fs-sm-14">完成訂購</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row gx-3 gx-lg-4">
+        <div class="col-6 col-md-3">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true"
+            alt="展覽圖片"
+            class="cart-img"
+          />
+        </div>
+        <div class="col-6 col-md-9">
+          <div class="d-none d-lg-block">
+            <h3 class="h6 fw-bold">2020 台味設計展</h3>
+            <div class="d-flex justify-content-between align-items-center my-1">
+              <p class="font-medium">01 JUN — 31 OCT</p>
+              <p class="fw-bold h5">NT$350</p>
+              <div class="d-flex align-items-center">
+                <a href="#">
+                  <span class="material-icons-outlined align-middle">
+                    add
+                  </span>
+                </a>
+                <input
+                  type="text"
+                  class="border-0 text-center h5 fw-bold mx-2"
+                  placeholder=""
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                  style="width: 46px"
+                  value="01"
+                />
+                <a href="#">
+                  <span class="material-icons-outlined align-middle">
+                    remove
+                  </span>
+                </a>
+              </div>
+              <button class="btn btn-close" type="button"></button>
+            </div>
+            <p class="text-dark">全票</p>
+          </div>
+          <div class="d-block d-lg-none">
+            <div class="d-flex justify-content-between">
+              <h3 class="h6 fw-bold">2020 台味設計展</h3>
+              <button class="btn btn-close" type="button"></button>
+            </div>
+            <p class="font-medium my-1">01 JUN — 31 OCT</p>
+            <div class="d-flex justify-content-between">
+              <p class="text-dark">
+                全票 <span class="text-black fw-bold h5">1</span>
+              </p>
+              <p class="fw-bold h5">NT$350</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-3 gx-lg-4 mt-5">
+        <div class="col-6 col-md-3">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg?raw=true"
+            alt="展覽圖片"
+            class="cart-img"
+          />
+        </div>
+        <div class="col-6 col-md-9">
+          <div class="d-none d-lg-block">
+            <h3 class="h6 fw-bold">No.22 線上設計展</h3>
+            <div class="d-flex justify-content-between align-items-center my-1">
+              <p class="font-medium">01 JUN — 31 OCT</p>
+              <p class="fw-bold h5">NT$350</p>
+              <div class="d-flex align-items-center">
+                <a href="#">
+                  <span class="material-icons-outlined align-middle">
+                    add
+                  </span>
+                </a>
+                <input
+                  type="text"
+                  class="border-0 text-center h5 fw-bold mx-2"
+                  placeholder=""
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                  style="width: 46px"
+                  value="01"
+                />
+                <a href="#">
+                  <span class="material-icons-outlined align-middle">
+                    remove
+                  </span>
+                </a>
+              </div>
+              <button class="btn btn-close" type="button"></button>
+            </div>
+            <p class="text-dark">全票</p>
+          </div>
+          <div class="d-block d-lg-none">
+            <div class="d-flex justify-content-between">
+              <h3 class="h6 fw-bold">No.22 線上設計展</h3>
+              <button class="btn btn-close" type="button"></button>
+            </div>
+            <p class="font-medium my-1">01 JUN — 31 OCT</p>
+            <div class="d-flex justify-content-between">
+              <p class="text-dark">
+                全票 <span class="text-black fw-bold h5">1</span>
+              </p>
+              <p class="fw-bold h5">NT$350</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row gx-3 gx-lg-4 mt-5">
+        <div class="col-6 col-md-3">
+          <img
+            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true"
+            alt="展覽圖片"
+            class="cart-img"
+          />
+        </div>
+        <div class="col-6 col-md-9">
+          <div class="d-none d-lg-block">
+            <h3 class="h6 fw-bold">高雄設計節</h3>
+            <div class="d-flex justify-content-between align-items-center my-1">
+              <p class="font-medium">01 JUN — 31 OCT</p>
+              <p class="fw-bold h5">NT$350</p>
+              <div class="d-flex align-items-center">
+                <a href="#">
+                  <span class="material-icons-outlined align-middle">
+                    add
+                  </span>
+                </a>
+                <input
+                  type="text"
+                  class="border-0 text-center h5 fw-bold mx-2"
+                  placeholder=""
+                  aria-label="Example text with button addon"
+                  aria-describedby="button-addon1"
+                  style="width: 46px"
+                  value="01"
+                />
+                <a href="#">
+                  <span class="material-icons-outlined align-middle">
+                    remove
+                  </span>
+                </a>
+              </div>
+              <button class="btn btn-close" type="button"></button>
+            </div>
+            <p class="text-dark">全票</p>
+          </div>
+          <div class="d-block d-lg-none">
+            <div class="d-flex justify-content-between">
+              <h3 class="h6 fw-bold">No.22 線上設計展</h3>
+              <button class="btn btn-close" type="button"></button>
+            </div>
+            <p class="font-medium my-1">01 JUN — 31 OCT</p>
+            <div class="d-flex justify-content-between">
+              <p class="text-dark">
+                全票 <span class="text-black fw-bold h5">1</span>
+              </p>
+              <p class="fw-bold h5">NT$350</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offset-md-8 offset-6 col-6 col-md-4 cart-btn-height d-flex flex-column justify-content-end">
+      <div class="d-flex justify-content-between mb-3">
+        <p class="font-medium">小計</p>
+        <p class="font-medium">NT$1050</p>
+      </div>
+      <a href="order.html" class="btn btn-secondary w-100 py-2">下一步</a>
+    </div>
+  </div>
+</section>
+
 
     <script src="./assets/js/vendors.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
