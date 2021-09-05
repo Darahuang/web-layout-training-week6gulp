@@ -1,5 +1,4 @@
 .timeline {
-  border-top: 2px solid $secondary;
   &-bar {
     position: relative;
     padding-top: 6px;
@@ -39,8 +38,8 @@
    }
 }
 .cart-btn-height{
-  height: calc( 100vh - 550px );
-  @include media-breakpoint-down(md) { 
-    height: 173px;
-   }
+  // height: calc( 100vh - 550px );
+  // @include media-breakpoint-down(md) { 
+  //   height: 173px;
+  //  }
 }
