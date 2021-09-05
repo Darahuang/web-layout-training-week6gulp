@@ -17,40 +17,32 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./assets/style/all.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 border border-dark sticky-top">
   <div class="container position-relative align-items-center">
-    <a
-      class="
-       title
-        navbar-brand
-        h4
-        order-2
-        position-absolute
-        top-50
-        start-50
-        translate-middle
-      "
+    <button
+    class="navbar-toggler order-md-1"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="title navbar-brand h4 position-lg-absolute start-50 translate-middle-lg top-50"
       href="index.html"
       >EXHIBINECTION</a
     >
 
-    <button
-      class="navbar-toggler order-1"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div
-      class="collapse navbar-collapse justify-content-end"
+   
+    <div 
+      class="collapse navbar-collapse justify-content-end order-4"
       id="navbarNav"
     >
       <ul class="navbar-nav">
@@ -74,7 +66,7 @@
     </div>
     <a
       href="#"
-      class="order-3 ps-3 offcanvas-cart position-relative"
+      class="order-3 order-md-4 ps-3 offcanvas-cart position-relative "
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasRight"
       aria-controls="offcanvasRight"
@@ -84,16 +76,55 @@
     </a>
   </div>
 </nav>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 border border-dark ">
+  <div class="container-fluid position-relative align-items-center">
+    <a class="navbar-brand title navbar-brand h4 " href="index.html">EXHIBINECTION</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> -->
     <header  hidden  >
       <section class="banner-bg bg-cover">
   <div class="container h-100">
-    <div class="h-100 d-flex flex-column offset-md-1 justify-content-end justify-content-md-center">
-      <h1 class="h2 text-white mb-2">台北當代藝術展</h1>
-    <h3 class="text-white">01 JUN - 31 OCT</h3>
-    <div class="d-flex mt-3 mb-10 mb-md-0">
-      <a href="cart.html" class="btn btn-secondary btn-buy me-3 me-sm-2 text-white">購買票券</a>
-      <a href="info.html" class="btn btn-detail btn-outline-white">詳細資訊</a>
-    </div>
+    <div class="row h-100 flex-column offset-md-1 justify-content-end justify-content-md-center" >
+      <div class="col-md-11 offset-md-1">
+        <h1 class="h2 text-white mb-2">台北當代藝術展</h1>
+        <h3 class="text-white">01 JUN - 31 OCT</h3>
+        <div class="d-flex mt-3 mb-10 mb-md-0">
+          <a href="cart.html" class="btn btn-secondary btn-buy me-3 me-sm-2 text-white">購買票券</a>
+          <a href="info.html" class="btn btn-detail btn-outline-white">詳細資訊</a>
+        </div>
+        </div>
     </div>
   </div>
 </section>
@@ -277,7 +308,12 @@
         "
       >
         <div class="card bg-white mb-2">
-          <a href="#" class="btn btn-close p-2"></a>
+          <button
+              type="button"
+              class="btn-close p-2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           <div class="offcanvas-card px-6 pb-4 d-flex align-items-center">
             <img
               src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true"
@@ -317,7 +353,12 @@
           </div>
         </div>
         <div class="card bg-white mb-2">
-          <a href="#" class="btn btn-close p-2"></a>
+          <button
+              type="button"
+              class="btn-close p-2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           <div class="offcanvas-card px-6 pb-4 d-flex align-items-center">
             <img
               src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg?raw=true"
@@ -357,7 +398,12 @@
           </div>
         </div>
         <div class="card bg-white mb-2">
-          <a href="#" class="btn btn-close p-2"></a>
+          <button
+              type="button"
+              class="btn-close p-2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           <div class="offcanvas-card px-6 pb-4 d-flex align-items-center">
             <img
               src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true"
@@ -397,7 +443,12 @@
           </div>
         </div>
         <div class="card bg-white mb-2">
-          <a href="#" class="btn btn-close p-2"></a>
+          <button
+              type="button"
+              class="btn-close p-2"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           <div class="offcanvas-card px-6 pb-4 d-flex align-items-center">
             <img
               src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true"
@@ -439,7 +490,7 @@
 
         <div class="d-flex mt-5 justify-content-between align-items-center">
           <div class="text-white d-flex">
-            <span class="h5 me-4 mb-0">小記</span>
+            <p class="h5 me-4 mb-0">小記</p>
             <p class="h5 mb-0">NT$1050</p>
           </div>
           <a href="cart.html" class="btn btn-toCart py-2 px-6">前往結帳</a>
@@ -447,77 +498,80 @@
       </div>
     </div>
     
-<ul class=list-unstyled>
-  <li class="bg-primary">
-      <div class="container design text-white">
+
+  <ul class=list-unstyled>
+    <li class="bg-primary">
+        <div class="container design text-white">
+          <div class="row">
+            <div class="col-md-5  order-md-2">
+              <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true" alt="展覽圖片" class="design-img img-cover">
+            </div>
+            <div class="col-12 d-block d-md-none mt-3 mb-2">
+              <p class="h6 font-medium">
+                01 JUN — 31 OCT
+              </p>
+            </div>
+            <div class="col-md-4  order-md-1">
+              <h2 class="fs-3 fs-md-1 fw-bold mb-2 mb-md-5">2020 台味設計展</h2>
+              <p class=" font-medium">
+                一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+              </p>
+            </div>
+            <div class="col-md-1 d-none d-md-block order-md-3 mt-auto">
+              <p class="h5 fw-bold">01<br> JUN <br> | <br>31 <br>OCT</p>
+            </div>
+          </div>
+        </div>  
+    </li>
+    <li>
+      <div class="container design text-primary">
         <div class="row">
-          <div class="col-md-4 order-3 order-md-1">
-            <h2 class="fs-3 fs-md-1 fw-bold mb-2 mb-md-5">2020 台味設計展</h2>
-            <p class=" font-medium">
-              一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
-            </p>
+          <div class="col-md-5 order-md-2">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg?raw=true" alt="展覽圖片" class="design-img img-cover">
           </div>
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true" alt="展覽圖片" class="design-img img-cover">
-          </div>
-          <div class="col-md-1 d-none d-md-block position-relative order-md-3">
-            <p class="h5 fw-bold position-absolute bottom-0">01<br> JUN <br> | <br>31 <br>OCT</p>
-          </div>
-          <div class="col-12 d-block d-md-none order-2 mt-3 mb-2">
+          <div class="col-12 d-block d-md-none mt-3 mb-2">
             <p class="h6 font-medium">
               01 JUN — 31 OCT
             </p>
           </div>
-        </div>
-      </div>  
-  </li>
-  <li>
-    <div class="container design text-primary">
-      <div class="row">
-        <div class="col-md-4 order-3 order-md-1 offset-md-2">
-          <h2 class="fs-3 fs-md-1 fw-bold mb-2 mb-md-5">No.22 線上設計展</h2>
-          <p class= font-medium">
-            這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
-          </p>
-        </div>
-        <div class="col-md-5 order-1 order-md-2">
-          <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/michel-catalisano--a0D9LpcKV8-unsplash.jpg?raw=true" alt="展覽圖片" class="design-img img-cover">
-        </div>
-        <div class="col-md-1 d-none d-md-block position-relative order-md-3">
-          <p class="h5 fw-bold position-absolute bottom-0">01<br> JUN <br> | <br>31 <br>OCT</p>
-        </div>
-        <div class="col-12 d-block d-md-none order-2 mt-3 mb-2">
-          <p class="h6 font-medium">
-            01 JUN — 31 OCT
-          </p>
+          <div class="col-md-4 order-md-1 offset-md-2">
+            <h2 class="fs-3 fs-md-1 fw-bold mb-2 mb-md-5">No.22 線上設計展</h2>
+            <p class= font-medium">
+              這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
+            </p>
+          </div>
+          <div class="col-md-1 d-none d-md-block mt-auto order-md-3">
+            <p class="h5 fw-bold">01<br> JUN <br> | <br>31 <br>OCT</p>
+          </div>
         </div>
       </div>
-    </div>
-  </li>
-  <li class="bg-primary">
-    <div class="container design text-white">
-      <div class="row">
-        <div class="col-md-4 order-3 order-md-1">
-          <h2 class="fs-3 fs-md-1 fw-bold mb-2 mb-md-5">高雄設計節</h2>
-          <p class="font-medium">
-            設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
-          </p>
-        </div>
-        <div class="col-md-5 order-1 order-md-2">
-          <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true" alt="展覽圖片" class="design-img img-cover">
-        </div>
-        <div class="col-md-1 d-none d-md-block position-relative  order-md-3">
-          <p class="h5  position-absolute bottom-0">01<br> JUN <br> | <br>31 <br>OCT</p>
-        </div>
-        <div class="col-12 d-block d-md-none order-2 mt-3 mb-2">
-          <p class="h6 font-medium">
-            01 JUN — 31 OCT
-          </p>
+    </li>
+    <li class="bg-primary">
+      <div class="container design text-white">
+        <div class="row">
+          <div class="col-md-5 order-md-2">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/moralis-tsai-8xsktFRw28I-unsplash.jpg?raw=true" alt="展覽圖片" class="design-img img-cover">
+          </div>
+          <div class="col-12 d-block d-md-none mt-3 mb-2 ">
+            <p class="h6 font-medium">
+              01 JUN — 31 OCT
+            </p>
+          </div>
+          <div class="col-md-4 order-md-1">
+            <h2 class="fs-3 fs-md-1 fw-bold mb-2 mb-md-5">高雄設計節</h2>
+            <p class="font-medium">
+              設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
+            </p>
+          </div>
+          <div class="col-md-1 d-none d-md-block  order-md-3 mt-auto">
+            <p class="h5">01<br> JUN <br> | <br>31 <br>OCT</p>
+          </div>
         </div>
       </div>
-    </div>
-  </li>
-</ul>
+    </li>
+  </ul>
+
+
 
 
 
@@ -530,129 +584,126 @@
       <div class="swiper mySwiper offset-md-1">
         <ul class="swiper-wrapper list-unstyled">
           <li class="swiper-slide">
-            <a href="info.html" class="text-black">
-              <div class="position-relative">
-                <img
-                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true"
-                  alt="展覽圖片"
-                  class="swiper-img img-cover"
-                />
-                <div class="overlay">
-                  <p
-                    class="
-                      d-flex
-                      justify-content-center
-                      align-items-center
-                      h-100
-                      text-light
-                      h5
-                    "
-                  >
-                    More
-                  </p>
+            <div class="card">
+              <a href="info.html" class="text-black">
+                <div class="position-relative">
+                  <img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true"
+                    alt="展覽圖片"
+                    class="swiper-img img-cover"
+                  />
+                  <div class="overlay">
+                    <p
+                      class="
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        h-100
+                        text-light
+                        h5
+                      "
+                    >
+                      More
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <h3 class="h5 fw-bold my-1">No.22 線上設計展</h3>
-              <p>$350</p>
-            </a>
+                <h3 class="h5 fw-bold my-1">No.22 線上設計展</h3>
+                <p>$350</p>
+              </a>
+            </div> 
           </li>
           <li class="swiper-slide">
-            <a href="info.html" class="text-black">
-              <div class="position-relative">
-                <img
-                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg?raw=true"
-                  alt="展覽圖片"
-                  class="swiper-img img-cover"
-                />
-                <div class="overlay">
-                  <p
-                    class="
-                      d-flex
-                      justify-content-center
-                      align-items-center
-                      h-100
-                      text-light
-                      h5
-                    "
-                  >
-                    More
-                  </p>
+            <div class="card">
+              <a href="info.html" class="text-black">
+                <div class="position-relative">
+                  <img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/petri-heiskanen-bR9gFJqAnzA-unsplash.jpg?raw=true"
+                    alt="展覽圖片"
+                    class="swiper-img img-cover"
+                  />
+                  <div class="overlay">
+                    <p
+                      class="
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        h-100
+                        text-light
+                        h5
+                      "
+                    >
+                      More
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <h3 class="h5 fw-bold my-1">No.22 線上設計展</h3>
-              <p>$350</p>
-            </a>
+                <h3 class="h5 fw-bold my-1">No.22 線上設計展</h3>
+                <p>$350</p>
+              </a>
+            </div>
+            
           </li>
           <li class="swiper-slide">
-            <a href="info.html" class="text-black">
-              <div class="position-relative">
-                <img
-                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true"
-                  alt="展覽圖片"
-                  class="swiper-img img-cover"
-                />
-                <div class="overlay">
-                  <p
-                    class="
-                      d-flex
-                      justify-content-center
-                      align-items-center
-                      h-100
-                      text-light
-                      h5
-                    "
-                  >
-                    More
-                  </p>
+            <div class="card">
+              <a href="info.html" class="text-black">
+                <div class="position-relative">
+                  <img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/museums-victoria-kiDwVL_5ZBY-unsplash%20(1).jpg?raw=true"
+                    alt="展覽圖片"
+                    class="swiper-img img-cover"
+                  />
+                  <div class="overlay">
+                    <p
+                      class="
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        h-100
+                        text-light
+                        h5
+                      "
+                    >
+                      More
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <h3 class="h5 fw-bold my-1">No.22 線上設計展</h3>
-              <p>$350</p>
-            </a>
+                <h3 class="h5 fw-bold my-1">No.22 線上設計展</h3>
+                <p>$350</p>
+              </a>
+            </div>
+            
           </li>
           <li class="swiper-slide">
-            <a href="info.html" class="text-black">
-              <div class="position-relative">
-                <img
-                  src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true"
-                  alt="展覽圖片"
-                  class="swiper-img img-cover"
-                />
-                <div class="overlay">
-                  <p
-                    class="
-                      d-flex
-                      justify-content-center
-                      align-items-center
-                      h-100
-                      text-light
-                      h5
-                    "
-                  >
-                    More
-                  </p>
+            <div class="card">
+              <a href="info.html" class="text-black">
+                <div class="position-relative">
+                  <img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg?raw=true"
+                    alt="展覽圖片"
+                    class="swiper-img img-cover"
+                  />
+                  <div class="overlay">
+                    <p
+                      class="
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        h-100
+                        text-light
+                        h5
+                      "
+                    >
+                      More
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <h3 class="h5 fw-bold my-1">No.22 線上設計展</h3>
-              <p>$350</p>
-            </a>
+                <h3 class="h5 fw-bold my-1">No.22 線上設計展</h3>
+                <p>$350</p>
+              </a>
+            </div>
+           
           </li>
         </ul>
       </div>
-      <!-- <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
-          <div class="swiper-slide">Slide 9</div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div> -->
     </section>
     <section class="second-banner-bg bg-cover mt-md-9 mt-4">
       <div class="container h-100">
@@ -661,22 +712,27 @@
             想收到最新消息嗎？<br />
             快訂閱我們！
           </h2>
-          <div class="input-group mb-7">
-            <input
-              type="text"
-              class="form-control submit-form-width"
-              placeholder="輸入您的電子信箱"
-              aria-label="email text with button addon"
-              aria-describedby="button-addon1"
-            />
-            <button
-              class="btn btn-secondary text-white submit-btn-width"
-              type="button"
-              id="button-addon1"
-            >
-              訂閱
-            </button>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="input-group mb-7">
+                <input
+                  type="text"
+                  class="form-control submit-form-width"
+                  placeholder="輸入您的電子信箱"
+                  aria-label="email text with button addon"
+                  aria-describedby="button-addon1"
+                />
+                <button
+                  class="btn btn-secondary text-white submit-btn-width"
+                  type="button"
+                  id="button-addon1"
+                >
+                  訂閱
+                </button>
+              </div>
+            </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -690,7 +746,7 @@
           "
         >
           <h3 class="h5 me-3">EXHIBINECTION</h3>
-          <span class="align-middle">© 2020. All Rights Reserved.</span>
+          <h6 class="align-middle">© 2020. All Rights Reserved.</h6>
         </div>
         <ul class="navbar-nav d-none d-sm-flex flex-row">
           <li class="nav-item">

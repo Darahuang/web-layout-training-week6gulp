@@ -17,40 +17,32 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./assets/style/all.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 border border-dark sticky-top">
   <div class="container position-relative align-items-center">
-    <a
-      class="
-       title
-        navbar-brand
-        h4
-        order-2
-        position-absolute
-        top-50
-        start-50
-        translate-middle
-      "
+    <button
+    class="navbar-toggler order-md-1"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="title navbar-brand h4 position-lg-absolute start-50 translate-middle-lg top-50"
       href="index.html"
       >EXHIBINECTION</a
     >
 
-    <button
-      class="navbar-toggler order-1"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div
-      class="collapse navbar-collapse justify-content-end"
+   
+    <div 
+      class="collapse navbar-collapse justify-content-end order-4"
       id="navbarNav"
     >
       <ul class="navbar-nav">
@@ -74,7 +66,7 @@
     </div>
     <a
       href="#"
-      class="order-3 ps-3 offcanvas-cart position-relative"
+      class="order-3 order-md-4 ps-3 offcanvas-cart position-relative "
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasRight"
       aria-controls="offcanvasRight"
@@ -84,6 +76,43 @@
     </a>
   </div>
 </nav>
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 border border-dark ">
+  <div class="container-fluid position-relative align-items-center">
+    <a class="navbar-brand title navbar-brand h4 " href="index.html">EXHIBINECTION</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> -->
     <nav  hidden >
         <nav class="container-fluid border-bottom border-dark">
     <div class="mt-4 nav-scroller ">
@@ -425,7 +454,7 @@
         </div>
         <div class="d-flex mt-5 justify-content-between align-items-center">
           <div class="text-white d-flex">
-            <span class="h5 me-4 mb-0">小記</span>
+            <p class="h5 me-4 mb-0">小記</p>
             <p class="h5 mb-0">NT$1050</p>
           </div>
           <a href="cart.html" class="btn btn-toCart text-primary py-2 px-6"
@@ -441,7 +470,7 @@
     <div class="col-md-8">
       <ul
         class="
-          timeline
+          border-top border-2 border-secondary
           list-unstyled
           d-flex
           justify-content-around
@@ -568,7 +597,7 @@
         <div class="mb-4">
           <label for="creditNumber" class="form-label">信用卡帳號</label>
           <input
-            type="tel"
+            type="text"
             class="form-control"
             id="creditNumber"
             placeholder="Xxxx-xxxx-xxxx-xxxx"
@@ -577,7 +606,7 @@
         <div class="mb-4">
           <label for="dueDate" class="form-label">有效日期</label>
           <input
-            type="text"
+            type="date"
             class="form-control"
             id="dueDate"
             placeholder="(MM/YY)"
@@ -586,7 +615,7 @@
         <div class="mb-9">
           <label for="securityCode" class="form-label">安全碼</label>
           <input
-            type="number"
+            type="text"
             class="form-control"
             id="securityCode"
             placeholder="***"
